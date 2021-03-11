@@ -8,16 +8,16 @@ d3.json("data.json").then((incomingData) => {
   // Use filter() to pass the function as its argument
   var filteredBooks = incomingData.filter(filterBookRatings);
 
-  //  Check to make sure your are filtering your movies.
+  //  Check to make sure your are filtering your books.
   console.log(filteredBooks);
 
-  // Use the map method with the arrow function to return all the filtered movie titles.
+  // Use the map method with the arrow function to return all the filtered book titles.
   var titles = filteredBooks.map(books =>  books.title);
 
-  // Use the map method with the arrow function to return all the filtered movie metascores.
+  // Use the map method with the arrow function to return all the filtered book ratings.
   var ratings = filteredBooks.map(books => books.rating);
 
-  // Check your filtered metascores.
+  // Check your filtered ratings.
   console.log(ratings);
 
   // Create your trace.
